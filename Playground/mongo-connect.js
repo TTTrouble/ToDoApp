@@ -59,6 +59,5 @@ client.connect(err => {
     //     console.log(JSON.stringify(result.ops, undefined, 2));
     // })
 
-
     client.close();
 });
