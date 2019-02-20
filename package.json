@@ -4,7 +4,9 @@
   "description": "",
   "main": "mongo-connect.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha **/*.test.js",
+    "test-watch": "nodemon --exec \"npm test\"",
+    "start": "node server.js"
   },
   "author": "",
   "license": "ISC",
@@ -15,6 +17,9 @@
     "mongoose": "^5.4.13"
   },
   "devDependencies": {
-    "nodemon": "^1.18.10"
+    "expect": "^24.1.0",
+    "mocha": "^6.0.0",
+    "nodemon": "^1.18.10",
+    "supertest": "^3.4.2"
   }
 }
